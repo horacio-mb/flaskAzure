@@ -11,8 +11,8 @@
   </head>
   <body>
     <div class="container">
-      <h1>Translate, synthesize, and analyze text with Azure</h1>
-      <p>This simple web app uses Azure for text translation, text-to-speech conversion, and sentiment analysis of input text and translations. Learn more about <a href="https://docs.microsoft.com/azure/cognitive-services/">Azure Cognitive Services</a>.
+      <h1>Traducción, síntesis y análisis de texto con Azure</h1>
+      <p>Esta sencilla aplicación web usa Azure para la traducción de texto, la conversión de texto a voz y el análisis de opiniones de texto y traducciones de entrada. Obtenga más información sobre Azure Cognitive Services
      </p>
      <!-- HTML provided in the following sections goes here. -->
      <div class="row">
@@ -20,12 +20,12 @@
           <form>
             <!-- Enter text to translate. -->
             <div class="form-group">
-              <label for="text-to-translate"><strong>Enter the text you'd like to translate:</strong></label>
+              <label for="text-to-translate"><strong>Ingresa texto aquí:</strong></label>
               <textarea class="form-control" id="text-to-translate" rows="5"></textarea>
             </div>
             <!-- Select output language. -->
             <div class="form-group">
-              <label for="select-language"><strong>Translate to:</strong></label>
+              <label for="select-language"><strong>Traducir a:</strong></label>
               <select class="form-control" id="select-language">
                 <option value="ar">Arabic</option>
                 <option value="ca">Catalan</option>
@@ -49,17 +49,17 @@
                 <option value="vi">Vietnamese</option>
               </select>
             </div>
-            <button type="submit" class="btn btn-primary mb-2" id="translate">Translate text</button></br>
+            <button type="submit" class="btn btn-primary mb-2" id="translate">Traducir texto</button></br>
             <div id="detected-language" style="display: none">
-              <strong>Detected language:</strong> <span id="detected-language-result"></span><br />
-              <strong>Detection confidence:</strong> <span id="confidence"></span><br /><br />
+              <strong>Lenguaje detectado:</strong> <span id="detected-language-result"></span><br />
+              <strong>Confianza de detección:</strong> <span id="confidence"></span><br /><br />
             </div>
       
             <!-- Start sentiment code-->
-            <button type="submit" class="btn btn-primary mb-2" id="sentiment-analysis">Run sentiment analysis</button></br>
+            <button type="submit" class="btn btn-primary mb-2" id="sentiment-analysis">Analizar sentimientos</button></br>
             <div id="sentiment" style="display: none">
-               <p>Sentiment can be labeled as "positive", "negative", "neutral", or "mixed". </p>
-               <strong>Sentiment label for input:</strong> <span id="input-sentiment"></span><br />
+               <p>El sentimiento se puede etiquetar como "positivo", "negativo", "neutral" o "mixto". </p>
+               <strong>Etiqueta de sentimiento para la entrada:</strong> <span id="input-sentiment"></span><br />
             </div>
             <!-- End sentiment code -->
       
@@ -69,13 +69,13 @@
           <!-- Translated text returned by the Translate API is rendered here. -->
           <form>
             <div class="form-group" id="translator-text-response">
-              <label for="translation-result"><strong>Translated text:</strong></label>
+              <label for="translation-result"><strong>Texto traducido:</strong></label>
               <textarea readonly class="form-control" id="translation-result" rows="5"></textarea>
             </div>
       
             <!-- Start voice font selection code -->
             <div class="form-group">
-                <label for="select-voice"><strong>Select voice font:</strong></label>
+                <label for="select-voice"><strong>Seleccione la fuente de voz::</strong></label>
                 <select class="form-control" id="select-voice">
                   <option value="(ar-SA, Naayf)">Arabic | Male | Naayf</option>
                   <option value="(ca-ES, HerenaRUS)">Catalan | Female | HerenaRUS</option>
@@ -123,7 +123,7 @@
           </form>
       
           <!-- Add Speech Synthesis button and audio element -->
-          <button type="submit" class="btn btn-primary mb-2" id="text-to-speech">Convert text-to-speech</button>
+          <button type="submit" class="btn btn-primary mb-2" id="text-to-speech">Convertir texto a voz</button>
           <div id="audio-playback">
             <audio id="audio" controls>
               <source id="audio-source" type="audio/mpeg" />
